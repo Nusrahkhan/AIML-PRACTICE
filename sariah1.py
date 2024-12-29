@@ -25,7 +25,7 @@ class Dog(Pet):
 petStore = {}
 
 #Generating random pet id's
-def generate_id(existing_ids, length = 2):
+def generate_id(existing_ids):
     while True:
         pet_id = random.randrange(10, 100)
         if pet_id not in existing_ids:
